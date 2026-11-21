@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/denied"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/camera"
+        android:scaleType="fitCenter"
+        android:padding="24dp"
+        android:src="@drawable/ic_camera_off"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#E6000000"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="8"
+            android:scrollbars="vertical"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="true"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/open"
+                style="@style/Button"
+                android:contentDescription="@string/open"
+                android:src="@drawable/ic_external_link" />
+
+            <ImageButton
+                android:id="@+id/copy"
+                style="@style/Button"
+                android:contentDescription="@string/copy"
+                android:src="@drawable/ic_copy" />
+
+            <ImageButton
+                android:id="@+id/close"
+                style="@style/Button"
+                android:contentDescription="@string/close"
+                android:src="@drawable/ic_x" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

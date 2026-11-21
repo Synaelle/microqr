@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">microqr</string>
+    <!-- read aloud by screen readers only, never shown -->
+    <string name="open">Open</string>
+    <string name="copy">Copy</string>
+    <string name="close">Close</string>
+    <string name="camera">Camera</string>
+    <style name="Theme" parent="android:Theme.Material.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    <style name="Button">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+</resources>
