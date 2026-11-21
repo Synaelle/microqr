@@ -1,4 +1,4 @@
-<img src="icon.svg" width="96" alt="">
+<p align="center"><img src="icon.svg" width="96" alt=""></p>
 
 # microqr
 
